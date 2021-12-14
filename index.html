@@ -43,18 +43,18 @@
                     <a class="ship-dropdown nav-link text-white p-0 m-0 d-flex align-items-center justify-content-left dropdown-toggle"
                         href="#ship-collapse" data-bs-toggle="collapse">
                         <div class="accent-bar"></div>
-                        <p class="p-4 m-0">Ship</p>
+                        <p class="p-4 m-0">SHIP</p>
                     </a>
                     <div class="collapse" id="ship-collapse">
                         <a class="nav-link" href="#">Shipping Information</a>
                     </div>
 
                     <ul class="list-unstyled">
-                        <li><a href="#" class="nav-link">History</a></li>
-                        <li><a href="#" class="nav-link">Tracking</a></li>
-                        <li><a href="#" class="nav-link">Addresses</a></li>
-                        <li><a href="#" class="nav-link">Pickups</a></li>
-                        <li><a href="#" class="nav-link">Reports</a></li>
+                        <li><a href="#" class="nav-link">HISTORY</a></li>
+                        <li><a href="#" class="nav-link">TRACKING</a></li>
+                        <li><a href="#" class="nav-link">ADDRESSES</a></li>
+                        <li><a href="#" class="nav-link">PICKUPS</a></li>
+                        <li><a href="#" class="nav-link">REPORTS</a></li>
                     </ul>
 
                 </div>
@@ -71,46 +71,228 @@
                 </div>
             </div>
             <div class="col-10 content d-flex justify-content-center align-items-center">
-                <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pickup-modal">
                     Schedule a Pickup
                 </button>
 
-                <!-- Modal -->
                 <div class="modal fade" id="pickup-modal" tabindex="-1" aria-labelledby="#pickup-modal-label"
                     aria-hidden="true" data-bs-backdrop="false">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content shadow">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="pickup-modal-label">Schedule a Pickup</h5>
+                                <h2 class="modal-title" id="pickup-modal-label">Schedule a Pickup</h2>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col mx-5">
                                             <h3>Schedule</h3>
-                                            <div class="schedule">
-                                                
+                                            <br>
+                                            <div class="schedule shadow rounded">
+                                                <div class="date">
+
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-2 d-flex justify-content-center align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                                                height="25" fill="currentColor" class="bi bi-calendar"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                            </svg>
+                                                        </div>
+
+                                                        <div class="col-10">
+                                                            <input type="date" class="form-control" id="Date"
+                                                                placeholder="Date">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="ready-time">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-2 d-flex justify-content-center align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                                                height="25" fill="currentColor" class="bi bi-calendar"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                            </svg>
+                                                        </div>
+
+                                                        <div class="col-10">
+                                                            <input type="date" class="form-control" id="Date"
+                                                                placeholder="Date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="building-close">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-2 d-flex justify-content-center align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                                                height="25" fill="currentColor" class="bi bi-calendar"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                            </svg>
+                                                        </div>
+
+                                                        <div class="col-10">
+                                                            <input type="date" class="form-control" id="Date"
+                                                                placeholder="Date">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
+
+                                            <br>
                                             <h3>Pickup Size</h3>
+                                            <br>
+
+                                            <div class="pickup-size">
+                                                <div class="row mb-4">
+                                                    <div class="col-6" style="padding-right: 7px;">
+                                                        <input type="number" class="form-control p-3" id="Letters"
+                                                            placeholder="Letters">
+                                                    </div>
+                                                    <div class="col-6" style="padding-left: 0;">
+                                                        <input type="number" class="form-control p-3" id="Boxes"
+                                                            placeholder="Boxes">
+                                                    </div>
+                                                </div>
+
+                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                    placeholder="NOTES TO MERCURY" rows="6"></textarea>
+                                            </div>
 
                                             <a href="#">more help</a>
                                         </div>
 
-                                        <div class="col">
+                                        <div class="col mx-5">
                                             <h3>Pickup Location</h3>
+                                            <br>
+                                            <div class="pickup-location">
+
+                                                <div class="row">
+                                                    <div class="col-2 d-flex align-items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            fill="currentColor" class="bi bi-calendar"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                        </svg>
+                                                    </div>
+
+                                                    <div class="col-10">
+                                                        <select class="form-select" aria-label="Default select example"
+                                                            aria-placeholder="Site">
+                                                            <option selected>Site</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                    placeholder="NOTES TO MERCURY" rows="6">
+                                                </textarea>
+
+                                                <p>Optional: upload a photo of location.</p>
+
+                                                <div class="mb-3">
+                                                    <label for="formFile" class="form-label">Default file input
+                                                        example</label>
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+
+                                                <hr>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckIndeterminate">
+                                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                                        SAVE CHANGES TO SITE DETAILS
+                                                    </label>
+                                                </div>
+
+
+                                            </div>
 
                                         </div>
 
-                                        <div class="col">
-                                            <h3>Contact</h3>
+                                        <div class="col mx-5">
+                                            <div class="contact">
 
-                                            <p>add my contact info</p>
+                                                <h3>Contact</h3>
+                                                <br>
 
+                                                <div class="mb-2">
+
+                                                    <input type="text" class="form-control" id="Name"
+                                                        placeholder="Name">
+                                                </div>
+
+                                                <div class="mb-2">
+
+                                                    <input type="text" class="form-control" id="Company"
+                                                        placeholder="Company">
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="mb-2 col-8" style="padding-right: 7px;">
+
+                                                        <input type="text" class="form-control" id="Phone"
+                                                            placeholder="Phone No.">
+                                                    </div>
+
+                                                    <div class="mb-2 col-4" style="padding-left: 0;">
+
+                                                        <input type="tel" class="form-control" id="Phone-ext"
+                                                            placeholder="Ext">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-2">
+
+                                                    <input type="email" class="form-control" id="Email"
+                                                        placeholder="Email">
+                                                </div>
+                                                <br>
+                                                <p>add my contact info</p>
+                                                <br>
+
+                                            </div>
                                             <h3>Notifications</h3>
+                                            <br>
 
+                                            <div class="notifications">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckIndeterminate">
+                                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                                        SEND NOTIFICATION OF PICKUP
+                                                    </label>
+                                                </div>
+                                                <hr>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckIndeterminate">
+                                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                                        SAME AS CONTACT EMAIL
+                                                    </label>
+                                                </div>
+
+                                                <div class="mb-2">
+
+                                                    <input type="email" class="form-control" id="Emails"
+                                                        placeholder="Emails">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

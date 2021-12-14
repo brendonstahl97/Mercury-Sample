@@ -8,6 +8,10 @@ body .nav-link {
 body .nav-link:hover {
   color: white;
 }
+body textarea.form-control {
+  resize: none;
+  background-color: #f3f3f3;
+}
 
 .sidebar {
   background-color: #22333a;
@@ -52,12 +56,17 @@ body .nav-link:hover {
 
 .content {
   height: 100vh;
-  position: relative;
+}
+.content h2 {
+  color: #9ba5a9;
 }
 .content .modal-dialog {
   margin-left: 20%;
   margin-right: 0;
   width: 70%;
+}
+.content .contact .form-control {
+  background-color: #f3f3f3;
 }
 
 /*# sourceMappingURL=style.css.map */

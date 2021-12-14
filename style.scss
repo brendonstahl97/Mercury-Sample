@@ -1,16 +1,22 @@
 $sidebar-color: rgb(34, 51, 58);
 $accent-color: rgb(236, 85, 64);
-$sidebar-text-alt: rgb(155, 165, 169);
+$text-alt: rgb(155, 165, 169);
+$input-background-color: rgb(243, 243, 243);
 
 body{
     margin: 0;
     padding: 0;
 
     .nav-link{
-        color: $sidebar-text-alt;
+        color: $text-alt;
         &:hover{
             color: white;
         }
+    }
+
+    textarea.form-control {
+        resize: none;
+        background-color: $input-background-color;
     }
 }
 
@@ -18,7 +24,6 @@ body{
     background-color: $sidebar-color;
     height: 100vh;
     color: white;
-    // min-width: 350px;
     font-size: 15pt;
 
     .sidebar-main{
@@ -59,18 +64,27 @@ body{
     .sidebar-prefs{
         background-color: darken($sidebar-color, 10%);
         height: 20vh;
-        color: $sidebar-text-alt;
+        color: $text-alt;
     }
 }
 
 .content{
     height: 100vh;
-    position: relative;
+
+    h2{
+        color: $text-alt;
+    }
 
     .modal-dialog{
         margin-left: 20%;
         margin-right: 0;
         width: 70%;
+    }
+
+    .contact{
+        .form-control{
+            background-color: $input-background-color
+        }
     }
 }
 
