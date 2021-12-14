@@ -5,13 +5,20 @@ $sidebar-text-alt: rgb(155, 165, 169);
 body{
     margin: 0;
     padding: 0;
+
+    .nav-link{
+        color: $sidebar-text-alt;
+        &:hover{
+            color: white;
+        }
+    }
 }
 
 .sidebar{
     background-color: $sidebar-color;
     height: 100vh;
     color: white;
-    min-width: 350px;
+    // min-width: 350px;
     font-size: 15pt;
 
     .sidebar-main{
@@ -47,29 +54,23 @@ body{
                 background-color: $accent-color;
             }
         }
-
-        li{
-            a{
-                color: $sidebar-text-alt;
-                &:hover{
-                    color: white;
-                }
-            }
-        }
     }
 
     .sidebar-prefs{
         background-color: darken($sidebar-color, 10%);
         height: 20vh;
         color: $sidebar-text-alt;
+    }
+}
 
-        a{
-            color: inherit;
-            &:hover{
-                color: white;
-                cursor: pointer;
-            }
-        }
+.content{
+    height: 100vh;
+    position: relative;
+
+    .modal-dialog{
+        margin-left: 20%;
+        margin-right: 0;
+        width: 70%;
     }
 }
 

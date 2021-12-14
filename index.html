@@ -20,7 +20,7 @@
 
                     <button
                         class="btn rounded m-3 profile-btn d-flex flex-row justify-content-between align-items-center"
-                        style="width: 90%;">
+                        style="width: 90%;" data-bs-toggle="collapse" data-bs-target="#user-collapse">
                         <div class="rounded-circle"
                             style="background-color:aqua; width: 7vh; height: 7vh; position: relative;">
                             <div class="notification rounded-circle d-flex align-items-center justify-content-center"
@@ -29,23 +29,25 @@
                             </div>
                         </div>
                         <p class="user-name m-0 pl-4">Brendon Stahl</p>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                            class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
-                                d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                         </svg>
                     </button>
 
-                    <a class="ship-dropdown nav-link text-white p-0 m-0 d-flex align-items-center justify-content-left">
+                    <div class="collapse" id="user-collapse">
+                        <a class="nav-link" href="#">Your Profile</a>
+                    </div>
+
+                    <a class="ship-dropdown nav-link text-white p-0 m-0 d-flex align-items-center justify-content-left dropdown-toggle"
+                        href="#ship-collapse" data-bs-toggle="collapse">
                         <div class="accent-bar"></div>
                         <p class="p-4 m-0">Ship</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                            class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
-                        </svg>
                     </a>
+                    <div class="collapse" id="ship-collapse">
+                        <a class="nav-link" href="#">Shipping Information</a>
+                    </div>
 
                     <ul class="list-unstyled">
                         <li><a href="#" class="nav-link">History</a></li>
@@ -68,19 +70,66 @@
                     </div>
                 </div>
             </div>
-            <div class="col-10 content">
+            <div class="col-10 content d-flex justify-content-center align-items-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pickup-modal">
+                    Schedule a Pickup
+                </button>
 
+                <!-- Modal -->
+                <div class="modal fade" id="pickup-modal" tabindex="-1" aria-labelledby="#pickup-modal-label"
+                    aria-hidden="true" data-bs-backdrop="false">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content shadow">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="pickup-modal-label">Schedule a Pickup</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h3>Schedule</h3>
+                                            <div class="schedule">
+                                                
+                                            </div>
+                                            <h3>Pickup Size</h3>
+
+                                            <a href="#">more help</a>
+                                        </div>
+
+                                        <div class="col">
+                                            <h3>Pickup Location</h3>
+
+                                        </div>
+
+                                        <div class="col">
+                                            <h3>Contact</h3>
+
+                                            <p>add my contact info</p>
+
+                                            <h3>Notifications</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Schedule Pickup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
