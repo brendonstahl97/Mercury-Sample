@@ -1,0 +1,75 @@
+$sidebar-color: rgb(34, 51, 58);
+$accent-color: rgb(236, 85, 64);
+$sidebar-text-alt: rgb(155, 165, 169);
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: $sidebar-color;
+    height: 100vh;
+    color: white;
+    min-width: 350px;
+    font-size: 15pt;
+
+    .sidebar-main{
+        height: 80vh;
+
+        .profile-btn{
+            background-color: lighten($sidebar-color, 5%);
+            color: inherit;
+            
+            .user-name{
+                font-weight: bold;
+            }
+
+            .notification{
+                position: absolute;
+                bottom: 0;
+                right: -10px;
+                background-color: $accent-color;
+            }
+        }
+
+        .ship-dropdown{
+            height: 75px;
+            position: relative;
+            font-weight: bold;
+            font-size: 15pt;
+
+            .accent-bar{
+                height: 100%;
+                width: 7px;
+                position: absolute;
+                left: -16px;
+                background-color: $accent-color;
+            }
+        }
+
+        li{
+            a{
+                color: $sidebar-text-alt;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .sidebar-prefs{
+        background-color: darken($sidebar-color, 10%);
+        height: 20vh;
+        color: $sidebar-text-alt;
+
+        a{
+            color: inherit;
+            &:hover{
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+

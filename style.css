@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: #22333a;
+  height: 100vh;
+  color: white;
+  min-width: 350px;
+  font-size: 15pt;
+}
+.sidebar .sidebar-main {
+  height: 80vh;
+}
+.sidebar .sidebar-main .profile-btn {
+  background-color: #2b414a;
+  color: inherit;
+}
+.sidebar .sidebar-main .profile-btn .user-name {
+  font-weight: bold;
+}
+.sidebar .sidebar-main .profile-btn .notification {
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  background-color: #ec5540;
+}
+.sidebar .sidebar-main .ship-dropdown {
+  height: 75px;
+  position: relative;
+  font-weight: bold;
+  font-size: 15pt;
+}
+.sidebar .sidebar-main .ship-dropdown .accent-bar {
+  height: 100%;
+  width: 7px;
+  position: absolute;
+  left: -16px;
+  background-color: #ec5540;
+}
+.sidebar .sidebar-main li a {
+  color: #9ba5a9;
+}
+.sidebar .sidebar-main li a:hover {
+  color: white;
+}
+.sidebar .sidebar-prefs {
+  background-color: #0f171a;
+  height: 20vh;
+  color: #9ba5a9;
+}
+.sidebar .sidebar-prefs a {
+  color: inherit;
+}
+.sidebar .sidebar-prefs a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
