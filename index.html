@@ -22,7 +22,7 @@
                         class="btn rounded m-3 profile-btn d-flex flex-row justify-content-between align-items-center"
                         style="width: 90%;" data-bs-toggle="collapse" data-bs-target="#user-collapse">
                         <div class="rounded-circle"
-                            style="background-color:aqua; width: 7vh; height: 7vh; position: relative;">
+                            style="background-color:aqua; width: 65px; height: 65px; position: relative;">
                             <div class="notification rounded-circle d-flex align-items-center justify-content-center"
                                 style="width: 30px; height: 30px;">
                                 3
@@ -84,68 +84,69 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body mt-5">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col mx-5">
+                                        <div class="col mx-3">
                                             <h3>Schedule</h3>
                                             <br>
-                                            <div class="schedule shadow rounded">
-                                                <div class="date">
+                                            <div class="schedule shadow-sm border rounded p-4">
+                                                <div
+                                                    class="pickup-date d-flex flex-row align-items-center mb-3 p-2 rounded border shadow-sm">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="#0d6efd" class="bi bi-calendar" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                    </svg>
 
-                                                    <div class="row">
-                                                        <div
-                                                            class="col-2 d-flex justify-content-center align-items-center">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="25" fill="currentColor" class="bi bi-calendar"
-                                                                viewBox="0 0 16 16">
-                                                                <path
-                                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                                            </svg>
-                                                        </div>
 
-                                                        <div class="col-10">
-                                                            <input type="date" class="form-control" id="Date"
-                                                                placeholder="Date">
-                                                        </div>
-                                                    </div>
-
+                                                    <select class="form-select border-0"
+                                                        aria-label="Default select example" aria-placeholder="Site">
+                                                        <option selected>Date</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
                                                 </div>
-                                                <div class="ready-time">
-                                                    <div class="row">
-                                                        <div
-                                                            class="col-2 d-flex justify-content-center align-items-center">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="25" fill="currentColor" class="bi bi-calendar"
-                                                                viewBox="0 0 16 16">
-                                                                <path
-                                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                                            </svg>
-                                                        </div>
+                                                <div
+                                                    class="ready-time d-flex flex-row align-items-center mb-3 p-2 rounded border shadow-sm">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="#0d6efd" class="bi bi-clock" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                        <path
+                                                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                                    </svg>
 
-                                                        <div class="col-10">
-                                                            <input type="date" class="form-control" id="Date"
-                                                                placeholder="Date">
-                                                        </div>
-                                                    </div>
+
+                                                    <select class="form-select border-0"
+                                                        aria-label="Default select example"
+                                                        aria-placeholder="Ready Time">
+                                                        <option selected>Ready Time</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
                                                 </div>
-                                                <div class="building-close">
-                                                    <div class="row">
-                                                        <div
-                                                            class="col-2 d-flex justify-content-center align-items-center">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="25" fill="currentColor" class="bi bi-calendar"
-                                                                viewBox="0 0 16 16">
-                                                                <path
-                                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                                            </svg>
-                                                        </div>
+                                                <div
+                                                    class="building-close d-flex flex-row align-items-center mb-3 p-2 rounded border shadow-sm">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="#0d6efd" class="bi bi-clock" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                        <path
+                                                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                                    </svg>
 
-                                                        <div class="col-10">
-                                                            <input type="date" class="form-control" id="Date"
-                                                                placeholder="Date">
-                                                        </div>
-                                                    </div>
+
+                                                    <select class="form-select border-0"
+                                                        aria-label="Default select example"
+                                                        aria-placeholder="Building Close">
+                                                        <option selected>Building Close</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
                                                 </div>
                                             </div>
 
@@ -154,68 +155,116 @@
                                             <br>
 
                                             <div class="pickup-size">
-                                                <div class="row mb-4">
-                                                    <div class="col-6" style="padding-right: 7px;">
-                                                        <input type="number" class="form-control p-3" id="Letters"
-                                                            placeholder="Letters">
+                                                <div class="size-vals d-flex flex-row mb-3">
+                                                    <div
+                                                        class="letters d-flex flex-row border rounded shadow-sm me-1 p-2">
+                                                        <input type="number" class="form-control border-0" id="Letters"
+                                                            placeholder="Letters" min="0">
+                                                        <div class="incrementBtns d-flex flex-column">
+                                                            <button class="increment-btn increment-up"
+                                                                onclick="this.parentNode.parentNode.querySelector('#Letters').stepUp()">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                                                                </svg>
+                                                            </button>
+                                                            <button class="increment-btn increment-down"
+                                                                onclick="this.parentNode.parentNode.querySelector('#Letters').stepDown()">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-6" style="padding-left: 0;">
-                                                        <input type="number" class="form-control p-3" id="Boxes"
-                                                            placeholder="Boxes">
+
+                                                    <div
+                                                        class="boxes d-flex flex-row border rounded shadow-sm ms-1 p-2">
+                                                        <input type="number" class="form-control border-0" id="Boxes"
+                                                            placeholder="Boxes" min="0">
+                                                        <div class="incrementBtns d-flex flex-column">
+                                                            <button class="increment-btn increment-up"
+                                                                onclick="this.parentNode.parentNode.querySelector('#Boxes').stepUp()">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                                                                </svg>
+                                                            </button>
+                                                            <button class="increment-btn increment-down"
+                                                                onclick="this.parentNode.parentNode.querySelector('#Boxes').stepDown()">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
                                                     </div>
+                                                </div>
+
+                                                <textarea class="form-control mb-4" id="exampleFormControlTextarea1"
+                                                    placeholder="NOTES TO MERCURY" rows="6"></textarea>
+                                            </div>
+
+                                            <a href="#" style="color: black;">more help</a>
+                                        </div>
+
+                                        <div class="col mx-3">
+                                            <h3>Pickup Location</h3>
+                                            <br>
+                                            <div class="pickup-location border rounded p-3">
+                                                <div
+                                                    class="site-selection d-flex flex-row align-items-center mb-2 p-2 rounded border shadow-sm">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="#0d6efd" class="bi bi-building" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
+                                                        <path
+                                                            d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
+                                                    </svg>
+
+
+                                                    <select class="form-select border-0"
+                                                        aria-label="Default select example" aria-placeholder="Site">
+                                                        <option selected>Site</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
                                                 </div>
 
                                                 <textarea class="form-control" id="exampleFormControlTextarea1"
                                                     placeholder="NOTES TO MERCURY" rows="6"></textarea>
-                                            </div>
-
-                                            <a href="#">more help</a>
-                                        </div>
-
-                                        <div class="col mx-5">
-                                            <h3>Pickup Location</h3>
-                                            <br>
-                                            <div class="pickup-location">
-
-                                                <div class="row">
-                                                    <div class="col-2 d-flex align-items-center">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                                            fill="currentColor" class="bi bi-calendar"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                                        </svg>
-                                                    </div>
-
-                                                    <div class="col-10">
-                                                        <select class="form-select" aria-label="Default select example"
-                                                            aria-placeholder="Site">
-                                                            <option selected>Site</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                    placeholder="NOTES TO MERCURY" rows="6">
-                                                </textarea>
+                                                <br>
 
                                                 <p>Optional: upload a photo of location.</p>
 
-                                                <div class="mb-3">
-                                                    <label for="formFile" class="form-label">Default file input
-                                                        example</label>
-                                                    <input class="form-control" type="file" id="formFile">
+                                                <div class="photo-upload d-flex flex-row align-items-center">
+                                                    <label class="btn border rounded p-3">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                            fill="#0d6efd" class="bi bi-plus" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                                        </svg>
+                                                        <input type="file" style="display: none;" name="image">
+                                                    </label>
+
+                                                    <p class="m-0 px-3">upload image</p>
                                                 </div>
 
                                                 <hr>
 
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckIndeterminate">
-                                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                                    <input class="form-check-input shadow-sm" type="checkbox" value=""
+                                                        id="save">
+                                                    <label class="form-check-label" for="save">
                                                         SAVE CHANGES TO SITE DETAILS
                                                     </label>
                                                 </div>
@@ -225,7 +274,7 @@
 
                                         </div>
 
-                                        <div class="col mx-5">
+                                        <div class="col mx-3">
                                             <div class="contact">
 
                                                 <h3>Contact</h3>
@@ -270,9 +319,9 @@
                                             <h3>Notifications</h3>
                                             <br>
 
-                                            <div class="notifications">
+                                            <div class="notifications shadow-sm border rounded p-3">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
+                                                    <input class="form-check-input shadow-sm" type="checkbox" value=""
                                                         id="flexCheckIndeterminate">
                                                     <label class="form-check-label" for="flexCheckIndeterminate">
                                                         SEND NOTIFICATION OF PICKUP
@@ -280,9 +329,9 @@
                                                 </div>
                                                 <hr>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
+                                                    <input class="form-check-input shadow-sm" type="checkbox" value=""
                                                         id="flexCheckIndeterminate">
-                                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                                    <label class="form-check-label mb-3" for="flexCheckIndeterminate">
                                                         SAME AS CONTACT EMAIL
                                                     </label>
                                                 </div>
@@ -298,7 +347,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-primary">Schedule Pickup</button>
+                                <button type="button" class="btn btn-primary p-3 px-5">Schedule Pickup</button>
                             </div>
                         </div>
                     </div>

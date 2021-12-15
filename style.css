@@ -60,13 +60,59 @@ body textarea.form-control {
 .content h2 {
   color: #9ba5a9;
 }
+.content h3 {
+  font-size: 17pt;
+}
+.content hr {
+  margin: 30px -16px 16px;
+  border: 0;
+}
+.content .form-check-label {
+  font-size: 10pt;
+  font-weight: 600;
+}
 .content .modal-dialog {
   margin-left: 20%;
   margin-right: 0;
-  width: 70%;
+  width: 90%;
+}
+.content input[type=checkbox] {
+  border: 1px solid silver;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  margin-right: 10px;
 }
 .content .contact .form-control {
   background-color: #f3f3f3;
+}
+.content .pickup-size input[type=number] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.content .pickup-size input[type=number]::-webkit-inner-spin-button,
+.content .pickup-size input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.content .pickup-size .increment-btn {
+  border: none;
+  background-color: white;
+  padding-right: 10px;
+}
+.content .pickup-size .increment-up {
+  display: grid;
+  place-items: end center;
+}
+.content .pickup-size .increment-down {
+  display: grid;
+  place-items: start center;
+}
+.content .pickup-location {
+  background-color: #f3f3f3;
+}
+.content .pickup-location .site-selection {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

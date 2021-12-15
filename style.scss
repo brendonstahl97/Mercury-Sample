@@ -2,6 +2,7 @@ $sidebar-color: rgb(34, 51, 58);
 $accent-color: rgb(236, 85, 64);
 $text-alt: rgb(155, 165, 169);
 $input-background-color: rgb(243, 243, 243);
+$form-check-input-checked-bg-color: white;
 
 body{
     margin: 0;
@@ -75,15 +76,74 @@ body{
         color: $text-alt;
     }
 
+    h3{
+        font-size: 17pt;
+    }
+
+    hr{
+        margin: 30px -16px 16px;
+        border: 0;
+    }
+
+    .form-check-label{
+        font-size: 10pt;
+        font-weight: 600;
+    }
+
     .modal-dialog{
         margin-left: 20%;
         margin-right: 0;
-        width: 70%;
+        width: 90%;
+    }
+
+    input[type="checkbox"]{
+        border: 1px solid rgb(192, 192, 192);
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        margin-right: 10px;
+
     }
 
     .contact{
         .form-control{
             background-color: $input-background-color
+        }
+    }
+
+    .pickup-size{
+        input[type="number"] {
+            -webkit-appearance: textfield;
+               -moz-appearance: textfield;
+                    appearance: textfield;
+        }
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none;
+        }
+
+        .increment-btn{
+            border: none;
+            background-color: white;
+            padding-right: 10px;
+        }
+
+        .increment-up{
+            display: grid;
+            place-items: end center;
+        }
+
+        .increment-down{
+            display: grid;
+            place-items: start center;
+        }
+    }
+
+    .pickup-location{
+        background-color: $input-background-color;
+
+        .site-selection{
+            background-color: white;
         }
     }
 }
