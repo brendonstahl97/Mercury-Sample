@@ -4,6 +4,8 @@ body {
 }
 body .nav-link {
   color: #9ba5a9;
+  font-size: 12pt;
+  font-weight: 500;
 }
 body .nav-link:hover {
   color: white;
@@ -22,17 +24,29 @@ body textarea.form-control {
 .sidebar .sidebar-main {
   height: 80vh;
 }
+.sidebar .sidebar-main .logo {
+  height: 50px;
+  width: 190px;
+}
 .sidebar .sidebar-main .profile-btn {
   background-color: #2b414a;
   color: inherit;
+  position: relative;
+  width: 90%;
+}
+.sidebar .sidebar-main .profile-btn .user-photo {
+  height: 65px;
+  width: 65px;
 }
 .sidebar .sidebar-main .profile-btn .user-name {
   font-weight: bold;
 }
 .sidebar .sidebar-main .profile-btn .notification {
   position: absolute;
+  width: 30px;
+  height: 30px;
   bottom: 0;
-  right: -10px;
+  left: 60px;
   background-color: #ec5540;
 }
 .sidebar .sidebar-main .ship-dropdown {
@@ -53,6 +67,9 @@ body textarea.form-control {
   height: 20vh;
   color: #9ba5a9;
 }
+.sidebar .sidebar-prefs .preferences {
+  height: 25px;
+}
 
 .content {
   height: 100vh;
@@ -67,6 +84,23 @@ body textarea.form-control {
   margin: 30px -16px 16px;
   border: 0;
 }
+.content input[type=checkbox] {
+  border: 1px solid silver;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.content input[type=checkbox]:checked {
+  background-color: white;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='rgb(13, 110, 253)' stroke='rgb(13, 110, 253)' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
+}
+.content input[type=date] {
+  padding-left: 10px;
+}
+.content input[type=date]:focus {
+  outline: none;
+}
 .content .form-check-label {
   font-size: 10pt;
   font-weight: 600;
@@ -76,12 +110,19 @@ body textarea.form-control {
   margin-right: 0;
   width: 90%;
 }
-.content input[type=checkbox] {
-  border: 1px solid silver;
-  width: 20px;
-  height: 20px;
-  border-radius: 3px;
-  margin-right: 10px;
+.content .form-select:focus, .content .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+.content .schedule .pickup-date {
+  position: relative;
+}
+.content .schedule .pickup-date .datepicker {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  background-color: white;
+  pointer-events: none;
 }
 .content .contact .form-control {
   background-color: #f3f3f3;
@@ -108,11 +149,23 @@ body textarea.form-control {
   display: grid;
   place-items: start center;
 }
+.content .pickup-size .help-link {
+  color: black;
+}
 .content .pickup-location {
   background-color: #f3f3f3;
 }
 .content .pickup-location .site-selection {
   background-color: white;
+}
+.content .pickup-location .img-upload {
+  display: none;
+}
+.content .contact .phone-input {
+  padding-right: 7px;
+}
+.content .contact .ext-input {
+  padding-left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

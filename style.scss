@@ -2,7 +2,6 @@ $sidebar-color: rgb(34, 51, 58);
 $accent-color: rgb(236, 85, 64);
 $text-alt: rgb(155, 165, 169);
 $input-background-color: rgb(243, 243, 243);
-$form-check-input-checked-bg-color: white;
 
 body{
     margin: 0;
@@ -10,6 +9,8 @@ body{
 
     .nav-link{
         color: $text-alt;
+        font-size: 12pt;
+        font-weight: 500;
         &:hover{
             color: white;
         }
@@ -30,9 +31,21 @@ body{
     .sidebar-main{
         height: 80vh;
 
+        .logo{
+            height: 50px;
+            width: 190px;
+        }
+
         .profile-btn{
             background-color: lighten($sidebar-color, 5%);
             color: inherit;
+            position: relative;
+            width: 90%;
+
+            .user-photo{
+                height: 65px;
+                width: 65px;
+            }
             
             .user-name{
                 font-weight: bold;
@@ -40,8 +53,10 @@ body{
 
             .notification{
                 position: absolute;
+                width: 30px;
+                height: 30px;
                 bottom: 0;
-                right: -10px;
+                left: 60px;
                 background-color: $accent-color;
             }
         }
@@ -66,6 +81,10 @@ body{
         background-color: darken($sidebar-color, 10%);
         height: 20vh;
         color: $text-alt;
+
+        .preferences{
+            height: 25px;
+        }
     }
 }
 
@@ -85,6 +104,26 @@ body{
         border: 0;
     }
 
+    input[type="checkbox"]{
+        border: 1px solid rgb(192, 192, 192);
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        margin-right: 10px;
+
+        &:checked{
+            background-color: white;
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='rgb(13, 110, 253)' stroke='rgb(13, 110, 253)' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
+        }
+    }
+
+    input[type="date"]{
+        padding-left: 10px;
+        &:focus{
+            outline: none;
+        }
+    }
+
     .form-check-label{
         font-size: 10pt;
         font-weight: 600;
@@ -96,12 +135,25 @@ body{
         width: 90%;
     }
 
-    input[type="checkbox"]{
-        border: 1px solid rgb(192, 192, 192);
-        width: 20px;
-        height: 20px;
-        border-radius: 3px;
-        margin-right: 10px;
+    .form-select, .form-control{
+        &:focus{
+            box-shadow: none;
+            outline: none;
+        }
+    }
+
+    .schedule{
+        .pickup-date{
+            position: relative;
+
+            .datepicker{
+                position: absolute;
+                top: 13px;
+                right: 15px;
+                background-color: white;
+                pointer-events: none;
+            }
+        }
 
     }
 
@@ -114,8 +166,8 @@ body{
     .pickup-size{
         input[type="number"] {
             -webkit-appearance: textfield;
-               -moz-appearance: textfield;
-                    appearance: textfield;
+            -moz-appearance: textfield;
+            appearance: textfield;
         }
         input[type=number]::-webkit-inner-spin-button, 
         input[type=number]::-webkit-outer-spin-button { 
@@ -137,6 +189,10 @@ body{
             display: grid;
             place-items: start center;
         }
+
+        .help-link{
+            color: black;
+        }
     }
 
     .pickup-location{
@@ -144,6 +200,20 @@ body{
 
         .site-selection{
             background-color: white;
+        }
+
+        .img-upload{
+            display: none;
+        }
+    }
+
+    .contact{
+        .phone-input{
+            padding-right: 7px;
+        }
+
+        .ext-input{
+            padding-left: 0;
         }
     }
 }
